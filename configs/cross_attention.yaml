@@ -1,0 +1,19 @@
+seed: 7
+data:
+  image_size: 64
+  max_text_length: 16
+  train_size: 512
+  validation_size: 128
+model:
+  hidden_dim: 64
+  patch_size: 8
+  num_heads: 4
+  num_fusion_layers: 2
+  num_action_layers: 1
+  action_horizon: 8
+  action_dim: 7
+training:
+  batch_size: 16
+  learning_rate: 0.0003
+  steps: 200
+  flow_steps: 6

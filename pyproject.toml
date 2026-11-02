@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robust-vla-research"
+version = "0.1.0"
+description = "Research extensions of TinyVLA for robot manipulation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "torch>=2.1", "PyYAML>=6.0", "requests>=2.31", "tqdm>=4.66"]
+
+[project.optional-dependencies]
+libero-data = ["h5py>=3.9"]
+test = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
